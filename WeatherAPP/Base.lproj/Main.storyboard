@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HighlandGothicFLF.ttf">
+            <string>HighlandGothicFLF</string>
+            <string>HighlandGothicFLF</string>
+        </mutableArray>
+        <mutableArray key="HighlandGothicLightFLF.ttf">
+            <string>HighlandGothicLightFLF</string>
+            <string>HighlandGothicLightFLF</string>
+            <string>HighlandGothicLightFLF</string>
+            <string>HighlandGothicLightFLF</string>
+            <string>HighlandGothicLightFLF</string>
+            <string>HighlandGothicLightFLF</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s2Q-PA-3v8"/>
+                        <viewControllerLayoutGuide type="bottom" id="uir-PH-89Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KuY-Fk-MpV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-Nw-SKK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sofia, BG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xi-Sm-cqx">
+                                <rect key="frame" x="133" y="20" width="334" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Tso-O3-4pI"/>
+                                    <constraint firstAttribute="width" constant="334" id="eg3-x8-rKD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HighlandGothicFLF" family="HighlandGothicFLF" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="5M8-dI-Hc0">
+                                <rect key="frame" x="118" y="202" width="365" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="365" id="AcB-rp-iJ1"/>
+                                    <constraint firstAttribute="height" constant="195" id="oge-bQ-s2Z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="lGL-XZ-OxL">
+                                <rect key="frame" x="234" y="241" width="133" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="8cs-28-GOb"/>
+                                    <constraint firstAttribute="height" constant="117" id="I5d-X4-CKh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-ZW-uqE">
+                                <rect key="frame" x="470" y="499" width="110" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="lFY-0R-7H2"/>
+                                    <constraint firstAttribute="width" constant="110" id="obD-s8-6SG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HighlandGothicFLF" family="HighlandGothicFLF" pointSize="66"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear Sky" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A46-w1-nPI">
+                                <rect key="frame" x="176" y="405" width="248" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="DvZ-Gr-4aE"/>
+                                    <constraint firstAttribute="height" constant="28" id="kVS-CK-7d6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HighlandGothicLightFLF" family="HighlandGothicLightFLF" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MMC-0g-Vrt">
+                                <rect key="frame" x="20" y="512" width="148" height="56"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEX-f6-pRO">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="28"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="Jg0-Vu-W40">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="CY7-XU-kiz"/>
+                                                    <constraint firstAttribute="width" constant="37" id="z1X-IK-joQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.6 m/s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdE-CL-cZe">
+                                                <rect key="frame" x="37" y="0.0" width="111" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="CfQ-EO-NxI"/>
+                                                    <constraint firstAttribute="width" constant="111" id="VmD-8e-mSN"/>
+                                                    <constraint firstAttribute="height" constant="28" id="XXe-L1-XqS"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="uOg-Ly-Evc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HighlandGothicLightFLF" family="HighlandGothicLightFLF" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4U-3J-2Cg">
+                                        <rect key="frame" x="0.0" y="28" width="148" height="28"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="UyF-mN-0yP">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="37" id="Ouf-s4-7JD"/>
+                                                    <constraint firstAttribute="height" constant="28" id="sVb-hR-B8h"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKa-Go-J2i">
+                                                <rect key="frame" x="37" y="0.0" width="111" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="BZp-Ze-22q"/>
+                                                    <constraint firstAttribute="height" constant="28" id="DDj-HS-yfZ"/>
+                                                    <constraint firstAttribute="width" constant="111" id="ewr-vo-Wuu"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="s7Y-Y0-fOn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HighlandGothicLightFLF" family="HighlandGothicLightFLF" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="Rln-qJ-CYY"/>
+                                    <constraint firstAttribute="height" constant="56" id="n63-dM-NoD"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="16/24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk2-Gs-8WN">
+                                <rect key="frame" x="490" y="481" width="70" height="21"/>
+                                <fontDescription key="fontDescription" name="HighlandGothicLightFLF" family="HighlandGothicLightFLF" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Type any city (e.g. London)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a8b-2k-lXq">
+                                <rect key="frame" x="176" y="109" width="248" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2z4-yU-HSF"/>
+                                    <constraint firstAttribute="width" constant="248" id="xrk-TW-Kei"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGU-Kd-H8a">
+                                <rect key="frame" x="201" y="65" width="199" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="6mv-Lr-yP7"/>
+                                    <constraint firstAttribute="height" constant="28" id="YK6-ty-lpL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HighlandGothicLightFLF" family="HighlandGothicLightFLF" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEb-a7-wof">
+                                <rect key="frame" x="269" y="147" width="63" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0A4-fk-AFQ"/>
+                                    <constraint firstAttribute="width" constant="63" id="PVn-Yq-Zya"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HighlandGothicLightFLF" family="HighlandGothicLightFLF" pointSize="15"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q87-Q6-eLi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a8b-2k-lXq" firstAttribute="top" secondItem="tGU-Kd-H8a" secondAttribute="bottom" constant="16" id="0Qr-nY-fDa"/>
+                            <constraint firstItem="3Xi-Sm-cqx" firstAttribute="centerX" secondItem="KuY-Fk-MpV" secondAttribute="centerX" id="3wr-Jk-xqb"/>
+                            <constraint firstItem="a8b-2k-lXq" firstAttribute="centerX" secondItem="KuY-Fk-MpV" secondAttribute="centerX" id="5Dj-S5-1p0"/>
+                            <constraint firstItem="uir-PH-89Z" firstAttribute="top" secondItem="7SJ-ZW-uqE" secondAttribute="bottom" constant="20" id="8Ov-kw-CWb"/>
+                            <constraint firstItem="lGL-XZ-OxL" firstAttribute="centerX" secondItem="5M8-dI-Hc0" secondAttribute="centerX" id="8zn-uW-xYv"/>
+                            <constraint firstItem="A46-w1-nPI" firstAttribute="centerX" secondItem="KuY-Fk-MpV" secondAttribute="centerX" id="GOx-vK-mXR"/>
+                            <constraint firstItem="uir-PH-89Z" firstAttribute="top" secondItem="rjt-Nw-SKK" secondAttribute="bottom" id="HVq-aH-UaK"/>
+                            <constraint firstItem="lGL-XZ-OxL" firstAttribute="centerY" secondItem="5M8-dI-Hc0" secondAttribute="centerY" id="Ip0-Ao-mCp"/>
+                            <constraint firstItem="tGU-Kd-H8a" firstAttribute="top" secondItem="3Xi-Sm-cqx" secondAttribute="bottom" constant="-1" id="Mij-iH-lV2"/>
+                            <constraint firstItem="3Xi-Sm-cqx" firstAttribute="top" secondItem="s2Q-PA-3v8" secondAttribute="bottom" id="PL8-7h-1yR"/>
+                            <constraint firstItem="uir-PH-89Z" firstAttribute="top" secondItem="MMC-0g-Vrt" secondAttribute="bottom" constant="32" id="RwZ-p3-wl7"/>
+                            <constraint firstItem="mk2-Gs-8WN" firstAttribute="centerY" secondItem="7SJ-ZW-uqE" secondAttribute="centerY" constant="-48" id="Sd0-4y-Ihq"/>
+                            <constraint firstAttribute="trailing" secondItem="rjt-Nw-SKK" secondAttribute="trailing" id="TwE-sc-ISQ"/>
+                            <constraint firstItem="5M8-dI-Hc0" firstAttribute="centerY" secondItem="KuY-Fk-MpV" secondAttribute="centerY" id="WON-W3-tVX"/>
+                            <constraint firstItem="tGU-Kd-H8a" firstAttribute="centerX" secondItem="KuY-Fk-MpV" secondAttribute="centerX" id="Xie-10-CoK"/>
+                            <constraint firstItem="mk2-Gs-8WN" firstAttribute="centerX" secondItem="7SJ-ZW-uqE" secondAttribute="centerX" id="ZNX-1U-K8l"/>
+                            <constraint firstItem="rjt-Nw-SKK" firstAttribute="leading" secondItem="KuY-Fk-MpV" secondAttribute="leading" id="dSa-Gm-6VD"/>
+                            <constraint firstItem="MMC-0g-Vrt" firstAttribute="leading" secondItem="KuY-Fk-MpV" secondAttribute="leadingMargin" id="emI-1e-j2a"/>
+                            <constraint firstItem="IEb-a7-wof" firstAttribute="centerX" secondItem="KuY-Fk-MpV" secondAttribute="centerX" id="fuT-Yw-ATY"/>
+                            <constraint firstItem="7SJ-ZW-uqE" firstAttribute="trailing" secondItem="KuY-Fk-MpV" secondAttribute="trailingMargin" id="mZW-Sm-uBo"/>
+                            <constraint firstItem="IEb-a7-wof" firstAttribute="top" secondItem="a8b-2k-lXq" secondAttribute="bottom" constant="8" id="r3F-Ed-Cj1"/>
+                            <constraint firstItem="5M8-dI-Hc0" firstAttribute="centerX" secondItem="KuY-Fk-MpV" secondAttribute="centerX" id="s1z-Ci-SLN"/>
+                            <constraint firstItem="rjt-Nw-SKK" firstAttribute="top" secondItem="KuY-Fk-MpV" secondAttribute="top" id="tpz-ag-3rY"/>
+                            <constraint firstItem="A46-w1-nPI" firstAttribute="top" secondItem="5M8-dI-Hc0" secondAttribute="bottom" constant="8" id="xyf-hH-iVI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImg" destination="rjt-Nw-SKK" id="bDJ-vo-MEm"/>
+                        <outlet property="childTempLbl" destination="mk2-Gs-8WN" id="1up-2v-O5T"/>
+                        <outlet property="cityField" destination="a8b-2k-lXq" id="Yhn-5s-329"/>
+                        <outlet property="descLabel" destination="A46-w1-nPI" id="JLS-5w-ygr"/>
+                        <outlet property="headerLabel" destination="3Xi-Sm-cqx" id="saG-Aq-diD"/>
+                        <outlet property="humidityLbl" destination="KKa-Go-J2i" id="aym-5w-GP1"/>
+                        <outlet property="mainTempLbl" destination="7SJ-ZW-uqE" id="q3r-cx-h60"/>
+                        <outlet property="timeLbl" destination="tGU-Kd-H8a" id="z0Z-e6-ewD"/>
+                        <outlet property="weatherIcon" destination="lGL-XZ-OxL" id="DlY-27-b2Q"/>
+                        <outlet property="windLbl" destination="jdE-CL-cZe" id="J1g-Ob-76T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="327"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01d" width="381" height="382"/>
+        <image name="Oval" width="236" height="236"/>
+        <image name="bg1" width="990" height="808"/>
+        <image name="humidity" width="352" height="440"/>
+        <image name="wind" width="262" height="167"/>
+    </resources>
+</document>
